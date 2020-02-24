@@ -21,21 +21,19 @@ be found in `spec/features`. Both tests should be passing to complete the lab.
 
 - Run `bundle install` from your terminal
 
-- Create a route that is mapped to a students' controller index action, the
-  resulting route should be `/students`
-
 - Create a controller for students and have it inherit from
   ApplicationController
+  
+- Create a route that is mapped to a StudentsController "index" action, the
+  resulting route should be `/students`
 
-- Integrate a controller action in the students' controller for handling the
-  `index` action
+- Add a controller action to the StudentsController named `index`
 
-- Have the new `index` action call the Student model and pull in a list of all
-  of the students with `Student.all` and store it in an instance variable
+- Have the new `index` action pull in a list of all of the students with `Student.all` and store it in an instance variable
 
-- Map an `index.html.erb` view file to the student controller and iterate over the
-  list of students returned from the index action in the controller. The
-  `index.html.erb` file should be placed within a `view/students` folder.
+- Create an `index.html.erb` view file and render it from your `Students#index` action.  The `index.html.erb` file should be placed within a `views/students` folder.  
+
+- In your view, iterate over the list of students returned from the index action in the controller and display the appropriate information. 
 
 ## Resources
 
